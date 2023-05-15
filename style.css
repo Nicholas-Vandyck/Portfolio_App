@@ -1,0 +1,407 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    text-decoration: none;
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+}
+
+main{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    padding: 0 5%;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+}
+
+.main-content{
+    width: 100%;
+    /* border-radius: 0px; */
+    background: #ffffff;
+}
+
+nav{
+   display: flex;
+   justify-content: center;
+}
+
+#navbar {
+   position: sticky;
+   top: 0;
+   background-color: #fff;
+   overflow: hidden;
+   z-index: 9999;
+ }
+
+ #navbar a {
+   color: #525050;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+
+ #navbar a.active {
+    text-decoration: underline 2.5px solid #FFB400;
+  }
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    /* padding-top: 4rem; */
+}
+
+.second-container{
+    padding-top: 4rem;
+    width: 659.79px;
+    height: 169.26px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 123.6%;
+    color: #2B2B2B;
+}
+
+span{
+    color: #FFB400;
+    
+}
+
+.third-container{
+    padding-top: 6rem;
+    width: 550px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #767676;
+}
+
+.button{
+    width: 6rem;
+    height: 3rem;
+    margin-top: 4rem;
+    background: #FFB400;
+    border: none;
+    color: #2B2B2B;
+    cursor: pointer;
+}
+
+.image{
+    margin-top: 5rem;
+}
+
+/* Style the grid items */
+#Service{
+   width: 100%;
+   height: 750px;
+}
+
+#grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: 10px;
+  
+}
+
+ .grid-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   padding: 30px;
+ }
+
+ .grid-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+ .service-text h1 {
+   padding-top: 72.13px;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 39.55px;
+   text-align: center;
+   color: #2b2b2b;
+  
+ }
+
+ .grid-item p {
+    margin: 0.5rem;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 24px;
+   text-align: center;
+   color: #2b2b2b;
+}
+
+ #Service h2{
+    padding-top: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 123.6%;
+    color: #2b2b2b;
+ }
+
+ #Service h3{
+    padding-top: 25px;
+    text-align: center;
+    width: 578px;
+    height: 68px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #767676;
+ }
+
+ #Service button{
+    display: flex;
+    justify-content: space-around;
+    width: 6rem;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #FFFFFF;
+    color: #FFB400;
+    cursor: pointer;
+ }
+
+ #Service button:hover{
+   border: 1px solid #FFB400;
+ }
+
+ #About{
+  padding-top: 4rem;
+ }
+
+ .about-us{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+  
+ }
+
+ .education-section{
+    width: 470px;
+    margin: 0 auto;
+ }
+
+ .education-section h4{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+ }
+
+ .education-section p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 15px;
+ }
+
+ .work-section{
+  width: 490px;
+  margin: 0 auto;
+ }
+
+ .work-section h4{
+   font-weight: 700;
+  font-size: 32px;
+  line-height: 123.6%;
+ }
+
+ .work-section p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 15px;
+ }
+
+ #school-work{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  gap: 16px;
+ }
+
+#school {
+  background: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border-bottom: 1.5px solid #f0f0f6;
+  margin: 0 25px 0 25px;
+  height: 15rem;
+}
+
+.left{
+  width: 180px;
+  margin: 30px 0 0 15px;
+}
+
+.left h1 {
+  width: 173px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+}
+
+.left h2{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.left h3{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 60px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100.9%;
+  text-align: center;
+  align-items: center;
+  color: #FFFFFF;
+  background: #FFB400;
+}
+
+.right h4{
+  width: 154px;
+}
+
+.right {
+  width: 353px;
+  margin: 30px 20px 0 15px;
+}
+
+.right p{
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.right h5{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+  #work {
+    height: 100%;
+    background: #fff;
+  }
+
+  #Contact{
+    padding-top: 2rem;
+  }
+
+.field{
+   width: 100%;
+   height: 100%;
+}
+
+.info{
+    margin-block: 3rem;
+    width: 651.52px;
+    height: 47.21px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 123.6%;
+    color: #2B2B2B;
+}
+
+   form {
+      padding: 3rem;
+      background: #fff;
+  }
+  
+  #fName {
+      margin-top: 1rem;
+      width: 100%;
+      height: 59.01px;
+      background: #F0F0F6;
+      border: none;
+  }
+  #email {
+      width: 100%;
+      height: 59.01px;
+      background: #F0F0F6;
+      border: none;
+  }
+  #subject {
+      width: 100%;
+      height: 59.01px;
+      background: #F0F0F6;
+      border: none;
+  }
+  #message {
+      padding-top: 1rem;
+      padding-left: 0.5rem;
+      width: 100%;
+      height: 193px;
+      background: #F0F0F6;
+      border: none
+  }
+  .send{
+      height: 70px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #2B2B2B;
+      background: #FFB400;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+  }
+  label{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 123.6%;
+      color: #767676;
+  }
+
+  textarea{
+   resize: none;
+   border: none;
+  }
+
+  picture{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 118px;
+   padding-bottom: 8rem;
+  }
+
+  footer{
+   display: flex;
+   margin: 0 auto;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+   width: 970px;
+   height: 60px;
+   background: #FFFFFF;
+  }
+
+  footer .copyright{
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 24px;
+   text-align: center;
+   color: #2B2B2B;
+  }
