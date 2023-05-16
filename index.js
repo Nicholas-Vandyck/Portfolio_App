@@ -5,6 +5,7 @@
     return `<a href="#${item}">${item}</a>`;
   });
 
+
   const navbar = document.getElementById('navbar');
   navbar.innerHTML = navLinks.join('');
 
@@ -26,6 +27,8 @@
     navLinks.forEach(link => link.classList.remove('active'));
     navLinks[currentSectionIndex].classList.add('active');
   }
+
+
   
  const gridItems  = [
   
@@ -73,7 +76,7 @@
  ];
 
  const gridContainer = document.getElementById('grid-container');
- console.log(gridContainer);
+
  gridItems.forEach(item => {
   if(item.svg){
  const gridItem = document.createElement('div'); 
@@ -193,6 +196,7 @@ workSection.innerHTML = WorksArr.map(work =>
     <h2>${work.text}</h2>
     <h3>${work.date}</h3>
     </div>
+
     <div class='right'>
    ${
     work.certificate ? `<h4>${work.certificate}</h4>` : ''
@@ -209,45 +213,47 @@ workSection.innerHTML = WorksArr.map(work =>
   const nameError = document.getElementById("nameError");
   const emailError = document.getElementById("emailError");
 
+
+  function isValidEmail(email) {
+    const emailRules = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRules.test(email);
+  }
   function validate() {
     let valid = true;
 
     // validate name field
     if (nameField.value.trim() === "") {
       nameError.textContent = "Name field is required.";
-      fName.style.border = "1px solid red";
+      fName.style.border = "2px solid red";
       valid = false;
     } else {
-      nameField.style.border = "1px solid green";
+      nameField.style.border = "2px solid green";
       nameError.textContent = "";
     }
 
     // validate email field
     if (emailField.value.trim() === "") {
       emailError.textContent = "Email field is required.";
-      email.style.border = "1px solid red";
+      email.style.border = "2px solid red";
       valid = false;
     } else if (!isValidEmail(emailField.value)) {
       emailError.textContent = "Please enter a valid email address.";
       valid = false;
     } else {
-      emailField.style.border = "1px solid green";
+      emailField.style.border = "2px solid green";
       emailError.textContent = "";
     }
 
     // if form is valid, submit the form
-    // if (valid) {
-    //   alert("Form submitted successfully!");
-    //   return true;
-    // }
+    if (valid) {
+      alert("Form submitted successfully!");
+      return true;
+    }
 
     return false;
   }
 
-  function isValidEmail(email) {
-    const emailRules = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailRules.test(email);
-  }
+ 
 
 
 
