@@ -22,8 +22,6 @@ main{
 
 .main-content{
     width: 100%;
-    /* border-radius: 0px; */
-    background: #ffffff;
 }
 
 nav{
@@ -53,11 +51,12 @@ nav{
 .main-container{
     display: flex;
     justify-content: space-around;
+    background-color: #FFFFFF;
     /* padding-top: 4rem; */
 }
 
-.second-container{
-    padding-top: 4rem;
+.second-container h1{
+    margin-top: 7rem;
     width: 659.79px;
     height: 169.26px;
     font-weight: 700;
@@ -91,7 +90,7 @@ span{
 }
 
 .image{
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 /* Style the grid items */
@@ -177,50 +176,49 @@ span{
  }
 
  #About{
-  padding-top: 4rem;
- }
-
- .about-us{
-   display: flex;
-   justify-content: space-between;
-   text-align: center;
-  
+  padding-top: -4rem;
  }
 
  .education-section{
     width: 470px;
+    height: 120px;
     margin: 0 auto;
  }
 
  .education-section h4{
+  text-align: center;
   font-weight: 700;
   font-size: 32px;
   line-height: 123.6%;
  }
 
  .education-section p{
+  text-align: center;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  padding-top: 15px;
+  margin:  15px 0 0 0;
  }
 
  .work-section{
   width: 490px;
+  height: 120px;
   margin: 0 auto;
  }
 
  .work-section h4{
+  text-align: center;
    font-weight: 700;
   font-size: 32px;
   line-height: 123.6%;
  }
 
  .work-section p{
+  text-align: center;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  padding-top: 15px;
+  margin:  15px 0 0 0;
  }
 
  #school-work{
@@ -232,6 +230,7 @@ span{
 
 #school {
   background: #fff;
+  margin-top: 25px;
 }
 
 .container {
@@ -300,8 +299,8 @@ span{
 }
 
   #work {
-    height: 100%;
     background: #fff;
+    margin-top: 25px;
   }
 
   #Contact{
@@ -404,4 +403,88 @@ span{
    line-height: 24px;
    text-align: center;
    color: #2B2B2B;
+  }
+
+  @media screen and (max-width: 820px) and (min-width: 480px){
+
+    .main-content{
+      margin-top: -7rem;
+    }
+    .mother{
+      margin-bottom: 5rem;
+      display: block;
+    }
+    .second-container {
+      text-align: center;
+    }
+
+    .second-container h1{
+      padding-top: 4rem;
+    }
+
+    .third-container {
+      margin: 0 auto;
+    }
+
+    .image{
+      margin-inline: 8rem;
+    }
+
+    #About{
+      margin-block: 8rem;
+    
+    }
+
+    .education-section p, .work-section p{
+      text-align: center;
+      width: 20rem;
+      margin-left: 0.8rem;
+    }
+
+    #school-work{
+      display: block;
+      margin-top: 12rem;
+    }
+
+    .education-section p, .work-section p{
+      position: relative;
+      top: 2rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    #school, #work{
+      position: relative;
+      top: 5rem;
+    }
+
+    .work-container{
+      position: relative;
+      top: 10rem;
+    }
+
+    .field{
+      position: relative;
+      top: 8rem;
+    }
+
+    picture img{
+      position: relative;
+      top: 5rem;
+      width: 10rem;
+    }
+
+    footer{
+      width: 40rem;
+    }
+
+  }
+
+  @media screen and (max-width: 375px){
+    nav{
+      display: none;
+    }
+    .mother{
+    
+    }
   }
