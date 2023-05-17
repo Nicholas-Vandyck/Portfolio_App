@@ -609,6 +609,24 @@ span{
       text-align: center;
       width: 100%;
     }
+  
+  #fName, #email {
+      height: 30px;
+  }
+ 
+  #subject {
+      height: 40px;
+  }
+  #message {
+      height: 100px;
+  }
+  .send{
+      margin: 0 0 0 28%;
+      height: 40px;
+      width: 110px;
+      font-size: 12px;
+    
+  }
 
     picture{
       display: grid;
