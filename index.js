@@ -245,10 +245,10 @@ workSection.innerHTML = WorksArr.map(work =>
     }
 
     // if form is valid, submit the form
-    if (valid) {
-      alert("Form submitted successfully!");
-      return true;
-    }
+    // if (valid) {
+    //   alert("Form submitted successfully!");
+    //   return true;
+    // }
 
     return false;
   }
