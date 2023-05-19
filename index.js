@@ -108,7 +108,6 @@
 const SchoolsArr = 
 [ 
   {
-    id: 1,
     name:'University of Toronto',
     text: 'Student',
     date: 'Jan 2016 - Dec 2021',
@@ -118,7 +117,6 @@ const SchoolsArr =
   },
 
   {
-    id: 2,
     name:'Programming institute of Chicago',
     text: 'Student',
     date: 'Jan 2016 - Dec 2021',
@@ -127,7 +125,6 @@ const SchoolsArr =
   },
 
   {
-    id: 3,
     name:'web developer courses',
     text: 'Student',
     date: 'Jan 2016 - Dec 2021',
@@ -160,7 +157,6 @@ schoolSection.innerHTML = SchoolsArr.map(school =>
 const WorksArr = 
   [
   { 
-    id: '4',
     name:'Lead Web Designer',
     text: 'Student',
     date: 'Jan 2016 - Dec 2021',
@@ -169,7 +165,6 @@ const WorksArr =
   },
 
   { 
-    id: '5',
     name:'Junior Web Designer',
     text: 'Student',
     date: 'Jan 2016 - Dec 2021',
@@ -178,7 +173,6 @@ const WorksArr =
   },
 
   {
-    id: '6',
     name:'Senior Web Designer',
     text: 'Student',
     date: 'Jan 2016 - Dec 2021',
@@ -223,7 +217,7 @@ workSection.innerHTML = WorksArr.map(work =>
 
     // validate name field
     if (nameField.value.trim() === "") {
-      nameError.textContent = "Name field is required.";
+      nameError.textContent = "Please name field is required.";
       fName.style.border = "2px solid red";
       valid = false;
     } else {
@@ -233,7 +227,7 @@ workSection.innerHTML = WorksArr.map(work =>
 
     // validate email field
     if (emailField.value.trim() === "") {
-      emailError.textContent = "Email field is required.";
+      emailError.textContent = "Please email field is required.";
       email.style.border = "2px solid red";
       valid = false;
     } else if (!isValidEmail(emailField.value)) {
@@ -245,10 +239,13 @@ workSection.innerHTML = WorksArr.map(work =>
     }
 
     // if form is valid, submit the form
-    // if (valid) {
-    //   alert("Form submitted successfully!");
-    //   return true;
-    // }
+    if (valid) {
+      setTimeout (function (){
+        alert("Form submitted successfully!");
+      },5000)
+      
+      return true;
+    }
 
     return false;
   }
